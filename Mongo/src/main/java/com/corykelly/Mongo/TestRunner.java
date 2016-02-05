@@ -26,7 +26,7 @@ public class TestRunner {
 	public static void main(String[] args) {
 		ArrayList<String> classPaths = new ArrayList<>();
 		classPaths.add(TestRunner.class.getName());
-		Mongo db = new Mongo(classPaths);
+		Mongo db = new Mongo(classPaths,"localhost","test");
 
 		
 		TestRunner runner = new TestRunner();
